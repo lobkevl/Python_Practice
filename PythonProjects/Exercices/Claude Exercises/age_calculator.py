@@ -1,5 +1,5 @@
-b = int(input("Enter your birth year: "))
-c = 2026
-print(f" You are {c-b} years old!")
+birth_year = int(input("Enter your birth year: "))
+current_year = 2026
+print(f" You are {current_year-birth_year} years old!")
 
 
