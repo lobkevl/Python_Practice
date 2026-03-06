@@ -1,29 +1,28 @@
-def add(a,b):
+def add(a, b):
     return a + b
 
-def substract(a,b):
+def substract(a, b):
     return a - b
 
-def multiply(a,b):
+def multiply(a, b):
     return a * b
 
-def divide(a,b):
-    if b == 0 :
-        return "Error : Cannot divide by 0"
+def divide(a, b):
+    if b == 0:
+        return "Error: cannot divide by 0"
     return a / b
 
-operation = input("Which kind of operation ?(add/substract/mutiply/divide) : ")
-a = float(input("Enter first number : "))
-b = float(input("Enter second number : "))
+operation = input("Which operation? (add/substract/multiply/divide): ")
+a = float(input("Enter first number: "))
+b = float(input("Enter second number: "))
 
-if operation == "add" :
+if operation == "add":
     print(f"Result: {add(a, b)}")
-
-elif operation == "substract" :
+elif operation == "substract":
     print(f"Result: {substract(a, b)}")
-elif operation == "multiply" : 
+elif operation == "multiply":
     print(f"Result: {multiply(a, b)}")
-    
-else:
+elif operation == "divide":
     print(f"Result: {divide(a, b)}")
-   
+else:
+    print("Invalid operation! Please choose add, substract, multiply or divide.")
