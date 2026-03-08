@@ -11,7 +11,7 @@ print(df)
 
 # Fill missing values with the median
 median_price = df['price'].median()
-df['price'].fillna(median_price, inplace=True)
+df['price'] = df['price'].fillna(median_price)
 
 
 # Print the DataFrame after filling missing values
